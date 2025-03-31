@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Project Details | Mouli Chittabathina</title>
+
+  <meta content="Detailed information about data analytics and machine learning projects by Mouli Chittabathina" name="description">
+  <meta content="portfolio, data analysis, machine learning, data visualization, automation, project details" name="keywords">
+  
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@100;300;400;500;600;700;900&family=Roboto+Slab:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <style>
+    :root {
+      --primary-color: #3498db;
+      --secondary-color: #e74c3c;
+      --text-color: #2c3e50;
+      --light-bg: #f8fbff;
+      --text-secondary: #555;
+    }
+    
+    .custom-text {
+      font-family: 'Roboto Slab', serif;
+      font-size: 1.15rem;
+      color: var(--text-color);
+    }
+    
+    .project-card {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      height: 100%;
+    }
+    
+    .section-heading {
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--text-color);
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    
+    .info-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 25px;
+    }
+    
+    .info-list li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 12px;
+      color: var(--text-secondary);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    
+    .info-list li i {
+      position: absolute;
+      left: 0;
+      top: 5px;
+      color: var(--primary-color);
+    }
+    
+    .swiper-slide img {
+      border-radius: 10px;
+      object-fit: cover;
+      width: 100%;
+      height: 450px;
+    }
+    
+    .tech-badge {
+      display: inline-block;
+      background: rgba(52, 152, 219, 0.1);
+      color: var(--primary-color);
+      padding: 5px 12px;
+      margin: 0 5px 8px 0;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .tech-badge:hover {
+      background: var(--primary-color);
+      color: white;
+      transform: translateY(-2px);
+    }
+    
+    .project-description p {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      font-size: 1.1rem;
+      text-align: justify;
+    }
+    
+    .back-to-projects {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: var(--primary-color);
+      color: white;
+      border-radius: 30px;
+      font-weight: 600;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+      transition: all 0.3s ease;
+    }
+    
+    .back-to-projects:hover {
+      background-color: #2980b9;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 15px rgba(52, 152, 219, 0.4);
+      color: white;
+    }
+    
+    .nav-container {
+      position: relative;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: var(--primary-color) !important;
+      background: rgba(255, 255, 255, 0.7);
+      width: 40px !important;
+      height: 40px !important;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 18px !important;
+    }
+    
+    .swiper-pagination-bullet-active {
+      background: var(--primary-color) !important;
+    }
+     /* Equal height cards for responsibilities and impact sections */
+  @media (min-width: 992px) {
+    .project-card.h-100 {
+      height: 100% !important;
+    }
+  }
+  
+  /* Adjust spacing on mobile */
+  @media (max-width: 991.98px) {
+    .row.mt-4 .col-lg-6:first-child {
+      margin-bottom: 20px;
+    }
+  }
+  /* Add these CSS styles to your existing styles section */
+
+/* Left align section headings */
+.section-heading {
+  text-align: left;
+}
+
+/* Left align project description text */
+.project-description p {
+  text-align: left;
+}
+
+/* Left align technology badges container */
+#project-technologies-badges {
+  text-align: left;
+}
+
+/* Left align info lists items */
+.info-list li {
+  text-align: left;
+}
+
+/* Left align breadcrumb navigation */
+.breadcrumbs ol {
+  justify-content: flex-start;
+}
+
+/* Left align page title container on mobile */
+@media (max-width: 991.98px) {
+  .page-title .container {
+    text-align: left;
+  }
+}
+
+/* Left align back to projects button */
+.back-to-projects {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* Left align swiper pagination bullets */
+.swiper-pagination {
+  text-align: left !important;
+  padding-left: 10px;
+}
+
+/* Left align image captions if any */
+.swiper-slide figcaption {
+  text-align: left;
+}
+
+/* Left align project information in the right column */
+.project-card .custom-text {
+  text-align: left;
+}
+
+/* Ensure project title is left-aligned on all screens */
+#project-title {
+  text-align: left;
+}
+
+/* Reset any default center alignments in Bootstrap */
+.text-center {
+  text-align: left !important;
+}
+
+/* Left align any flex containers */
+.d-flex {
+  justify-content: flex-start !important;
+}
+    /* Mobile footer fix */
+    @media (max-width: 768px) {
+      .swiper-slide img {
+        height: 300px;
+      }
+      
+      .project-card {
+        padding: 20px;
+        margin-top: 20px;
+      }
+      
+      .footer a {
+        display: inline-block;
+        padding: 8px 0;
+      }
+      
+      .footer .social-links a {
+        margin-bottom: 10px;
+      }
+      
+      .footer .quick-links li {
+        margin-bottom: 15px;
+      }
+      
+      #scroll-top {
+        bottom: 30px;
+        right: 25px;
+      }
+    }
+    
+  </style>
+  
+</head>
+
+<body class="portfolio-details-page">
+
+  <!-- Header -->
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img" data-aos="fade-in" data-aos-delay="200">
+      <img src="assets/img/Image15.jpg" alt="Profile Image" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center" data-aos="fade-in" data-aos-delay="300">
+      <h1 class="sitename">Mouli Chittabathina</h1>
+    </a>
+
+    <div class="social-links text-center" data-aos="fade-in" data-aos-delay="400">
+      <a href="https://www.linkedin.com/in/moulich1999" class="linkedin" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/moulichittabathina" class="github" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      <a href="mailto:moulichittabathina1999@gmail.com" class="email" target="_blank" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      <a href="https://wa.me/15715646067" class="whatsapp" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      <a href="https://www.instagram.com/moulichowdary110" class="instagram" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu" data-aos="fade-in" data-aos-delay="500">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house-door navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i>About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i>Resume</a></li>
+        <li><a href="index.html#portfolio" class="active"><i class="bi bi-collection navicon"></i>Projects</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 id="project-title" class="mb-2 mb-lg-0" style="font-weight: 700; font-size: 2.2rem;">Project Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Projects</a></li>
+            <li class="current" id="breadcrumb-project-title">Project Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Portfolio Details Section - With Key Responsibilities and Results side by side on desktop only -->
+<section id="portfolio-details" class="portfolio-details section" style="background-color: var(--light-bg); padding: 80px 0;">
+  <div class="container" data-aos="fade-up">
+    <!-- Top Section with Images and Project Overview -->
+    <div class="row gy-4">
+      <!-- Project Images -->
+      <div class="col-lg-8" data-aos="fade-right" data-aos-delay="100">
+        <div class="project-card nav-container">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper" id="project-images"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Overview and Technologies -->
+      <div class="col-lg-4" data-aos="fade-left" data-aos-delay="200">
+        <div class="project-card custom-text">
+          <!-- Project Information -->
+          <div class="mb-4">
+            <h3 class="section-heading">
+              <i class="fas fa-info-circle me-2"></i>Project Overview
+            </h3>
+            <ul class="info-list" id="project-info"></ul>
+          </div>
+          
+          <!-- Technologies Used -->
+          <div class="mb-4">
+            <h3 class="section-heading">
+              <i class="fas fa-laptop-code me-2"></i>Technologies Used
+            </h3>
+            <div id="project-technologies-badges"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Key Responsibilities and Results side by side on desktop, stacked on mobile -->
+    <div class="row mt-4">
+      <!-- Key Responsibilities -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+        <div class="project-card custom-text h-100">
+          <h3 class="section-heading">
+            <i class="fas fa-tasks me-2"></i>Key Responsibilities
+          </h3>
+          <ul class="info-list" id="project-roles"></ul>
+        </div>
+      </div>
+      
+      <!-- Results/Impact -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-card custom-text h-100">
+          <h3 class="section-heading">
+            <i class="fas fa-chart-line me-2"></i>Results & Impact
+          </h3>
+          <ul class="info-list" id="project-impact"></ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project Description -->
+    <div class="row mt-4">
+      <div class="col-12" data-aos="fade-up" data-aos-delay="350">
+        <div class="project-card project-description">
+          <h2 class="section-heading">
+            <i class="fas fa-project-diagram me-2"></i>About the Project
+          </h2>
+          <p id="project-description"></p>
+          <a href="index.html#portfolio" class="back-to-projects text-decoration-none">
+            <i class="fas fa-arrow-left me-2"></i>Back to Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+  
+  <!-- Footer -->
+  <footer id="footer" class="footer position-relative" style="background-color: #f8fbff; padding: 40px 0 20px; border-top: 1px solid rgba(0, 0, 0, 0.05);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="footer-info">
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: #2c3e50; margin-bottom: 15px;">Mouli Chittabathina</h3>
+            <p style="font-size: 0.95rem; color: #555; line-height: 1.7; margin-bottom: 20px;">
+              Transforming complex data into actionable insights through analytics, machine learning, and visualization.
+            </p>
+            <div class="social-links" style="margin-bottom: 20px;">
+              <a href="https://www.linkedin.com/in/moulich1999" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: #3498db; border-radius: 50%; color: white; margin-right: 10px; transition: all 0.3s ease;">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://github.com/moulichittabathina" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: #3498db; border-radius: 50%; color: white; margin-right: 10px; transition: all 0.3s ease;">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="mailto:moulichittabathina1999@gmail.com" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: #3498db; border-radius: 50%; color: white; margin-right: 10px; transition: all 0.3s ease;">
+                <i class="bi bi-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h4 style="font-size: 1.3rem; font-weight: 600; color: #2c3e50; margin-bottom: 15px;">Quick Links</h4>
+          <ul class="quick-links" style="list-style: none; padding-left: 0;">
+            <li style="margin-bottom: 10px;">
+              <a href="index.html#hero" style="color: #555; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem; display: block; padding: 3px 0;">
+                <i class="bi bi-chevron-right me-2" style="color: #3498db; font-size: 0.8rem;"></i>Home
+              </a>
+            </li>
+            <li style="margin-bottom: 10px;">
+              <a href="index.html#about" style="color: #555; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem; display: block; padding: 3px 0;">
+                <i class="bi bi-chevron-right me-2" style="color: #3498db; font-size: 0.8rem;"></i>About
+              </a>
+            </li>
+            <li style="margin-bottom: 10px;">
+              <a href="index.html#resume" style="color: #555; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem; display: block; padding: 3px 0;">
+                <i class="bi bi-chevron-right me-2" style="color: #3498db; font-size: 0.8rem;"></i>Resume
+              </a>
+            </li>
+            <li style="margin-bottom: 10px;">
+              <a href="index.html#portfolio" style="color: #555; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem; display: block; padding: 3px 0;">
+                <i class="bi bi-chevron-right me-2" style="color: #3498db; font-size: 0.8rem;"></i>Projects
+              </a>
+            </li>
+            <li>
+              <a href="index.html#contact" style="color: #555; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem; display: block; padding: 3px 0;">
+                <i class="bi bi-chevron-right me-2" style="color: #3498db; font-size: 0.8rem;"></i>Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4">
+          <h4 style="font-size: 1.3rem; font-weight: 600; color: #2c3e50; margin-bottom: 15px;">Contact Info</h4>
+          <p style="font-size: 0.95rem; color: #555; margin-bottom: 10px;">
+            <i class="bi bi-geo-alt me-2" style="color: #3498db;"></i>Fairfax, VA, 22030
+          </p>
+          <p style="font-size: 0.95rem; color: #555; margin-bottom: 10px;">
+            <i class="bi bi-phone me-2" style="color: #3498db;"></i>+1 571-564-6067
+          </p>
+          <p style="font-size: 0.95rem; color: #555; margin-bottom: 20px;">
+            <i class="bi bi-envelope me-2" style="color: #3498db;"></i>moulichittabathina1999@gmail.com
+          </p>
+        </div>
+      </div>
+      
+      <div class="copyright text-center mt-4" style="padding-top: 20px; border-top: 1px solid rgba(0, 0, 0, 0.05);">
+        <p style="font-size: 0.9rem; color: #555; margin-bottom: 5px;">
+          © <span>2025</span> <strong class="px-1">Mouli Chittabathina</strong> <span>All Rights Reserved</span>
+        </p>
+        <div class="credits" style="font-size: 0.8rem; color: #999;">
+          Originally designed by <a href="https://bootstrapmade.com/" style="color: #3498db;">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" style="position: fixed; right: 15px; bottom: 15px; z-index: 999; width: 44px; height: 44px; background: #3498db; color: white; border-radius: 50%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); transition: all 0.4s;">
+      <i class="bi bi-arrow-up-short" style="font-size: 24px; line-height: 0;"></i>
+    </a>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      });
+      
+      // Project data - Enhanced with more details from resume
+      const projects = {
+        "fraud-detection": {
+          title: "Fraud Detection Enhancement",
+          category: "Machine Learning",
+          date: "January 2025",
+          description: "Developed and deployed an advanced fraud detection system leveraging machine learning algorithms to identify suspicious transactions with high accuracy. The solution processed millions of transactions daily, significantly reducing financial losses and improving security measures. By combining multiple data sources and implementing real-time monitoring capabilities, the system detected patterns invisible to traditional rule-based approaches, resulting in a substantial reduction in false positives while increasing true detection rates. The project involved a comprehensive approach, including data preprocessing, feature engineering, model selection, and deployment strategies on both AWS and GCP cloud platforms. I worked with cross-functional teams to ensure the solution met business requirements and compliance standards while maintaining excellent performance metrics. The model was continuously improved through retraining with new data and adapting to evolving fraud patterns in the financial sector.",
+          technologies: ["Python", "SQL", "PySpark", "scikit-learn", "TensorFlow", "PyTorch", "pandas", "NumPy", "Power BI", "AWS", "GCP", "Apache Airflow", "Snowflake", "Hadoop", "Docker", "Git"],
+          roles: ["Data Pipeline Engineering", "ML Model Development", "Feature Engineering", "Cross-validation & Testing", "Dashboard Creation", "Cloud Infrastructure Setup", "Performance Optimization", "Model Evaluation & Tuning", "Documentation & Knowledge Transfer"],
+          impact: ["Improved fraud detection accuracy from 78% to 97%", "Processed over 100M transactions with reduced latency by 40%", "Saved an estimated $1.2M in potential fraud losses", "Implemented real-time alerting system", "Reduced false positives by 65%", "Automated reporting for regulatory compliance", "Created executive dashboards for monitoring key metrics", "Deployed model with A/B testing framework for validation"],
+          images: [
+            "assets/img/portfolio/Fraud_Detection_3.png",
+            "assets/img/portfolio/Fraud_Detection_2.png",
+            "assets/img/portfolio/Fraud_Detection_1.png"
+          ]
+        },
+        "sales-forecasting": {
+          title: "Sales Forecasting Dashboard",
+          category: "Data Visualization",
+          date: "November 2024",
+          description: "Created a comprehensive sales forecasting solution that combined time series analysis with interactive visualization capabilities. The system processed historical sales data to generate accurate predictions for future periods, enabling strategic inventory management and sales planning. By integrating advanced statistical methods with intuitive dashboards, the solution provided actionable insights to stakeholders across the organization, from inventory managers to C-level executives. The forecasting model incorporated seasonal patterns, trend analysis, and external factors to improve prediction accuracy. I implemented multiple visualization tools (Power BI, Tableau, Qlik, and Looker) to provide flexible reporting options tailored to different business units. The solution featured drill-down capabilities, scenario planning, and what-if analysis to support decision-making processes. Regular feedback sessions with stakeholders ensured continuous improvement of the dashboards and forecasting models to meet evolving business needs and market conditions.",
+          technologies: ["Python", "SQL", "R", "Power BI", "Tableau", "Qlik", "Looker", "Excel (Pivot Tables)", "pandas", "NumPy", "matplotlib", "seaborn", "Prophet", "ARIMA", "scikit-learn", "Google BigQuery", "Microsoft Fabric", "AWS Redshift"],
+          roles: ["Time Series Modeling", "Dashboard Development", "Data Transformation", "ETL Pipeline Creation", "Statistical Analysis", "User Training", "Requirements Gathering", "Data Quality Assurance", "Seasonal Adjustment Implementation", "Custom Metric Development"],
+          impact: ["Improved forecasting accuracy from 65% to 95%", "Reduced inventory shortages by 20%", "Created 10+ interactive dashboards with KPIs", "Accelerated decision-making by 35%", "Decreased inventory holding costs by 15%", "Eliminated manual forecasting processes saving 20+ hours weekly", "Enabled mobile-friendly reporting for executives", "Streamlined planning cycle from 2 weeks to 3 days", "Integrated with existing ERP system for seamless data flow"],
+          images: ["assets/img/portfolio/Sales_forecasting_KPI_dashboard_1.jpg",
+                   "assets/img/portfolio/Sales_forecasting_KPI_dashboard_2.jpg",
+                   "assets/img/portfolio/Sales_forecasting_KPI_dashboard_3.jpg"]
+        },
+        "real-time-analytics": {
+          title: "Real-Time Analytics Platform",
+          category: "Data Engineering & Analytics",
+          date: "August 2024",
+          description: "Architected and implemented a high-performance real-time analytics platform capable of processing millions of events daily while maintaining low latency. The system utilized modern big data technologies to ingest, transform, and analyze streaming data from multiple sources. By optimizing the data processing pipeline and implementing efficient storage solutions, the platform delivered crucial business insights in near real-time, enabling rapid response to changing market conditions and operational issues. The architecture implemented a lambda design pattern with both batch and stream processing capabilities, providing comprehensive analytics for historical trends and real-time monitoring. The platform featured fault-tolerance through distributed processing, automatic scaling to handle traffic spikes, and robust error handling to ensure data integrity. I collaborated with data scientists to implement real-time ML models within the pipeline and with business stakeholders to create customized dashboards for monitoring critical KPIs. The solution also included comprehensive logging and alerting systems to ensure operational stability and performance.",
+          technologies: ["Apache Kafka", "Hadoop", "PySpark", "AWS (Glue, S3, Lambda, Redshift)", "Microsoft Fabric", "Google BigQuery", "Snowflake", "Docker", "Kubernetes", "Airflow", "Python", "SQL", "NoSQL", "Redis", "Grafana", "Elasticsearch", "Kibana"],
+          roles: ["Data Architecture", "Pipeline Development", "Performance Optimization", "Cloud Integration", "Monitoring Setup", "Cluster Management", "Security Implementation", "Cost Optimization", "Disaster Recovery Planning", "Service Level Agreement Management"],
+          impact: ["Processed 5M+ events daily with 35% improved speed", "Reduced data processing latency from 10s to 7s", "Achieved 20% cost savings through optimization", "Enabled real-time business decision making", "Improved system reliability with 99.99% uptime", "Decreased data staleness from hours to minutes", "Enhanced data governance and lineage tracking", "Created self-service analytics platform for business users", "Implemented real-time anomaly detection with alerting"],
+          images: ["assets/img/portfolio/Real_Time_Analytics_3.jpg",
+                   "assets/img/portfolio/Real-Time-Analytics_1.png",
+                   "assets/img/portfolio/Real-Time-Analytics_2.png"]
+        },
+        "retail-segmentation": {
+          title: "Retail Segmentation & Analysis",
+          category: "Data Analysis",
+          date: "May 2024",
+          description: "Conducted comprehensive customer segmentation analysis for a retail organization to identify high-value customer groups and their purchasing behaviors. By combining transactional data with demographic information, the project revealed distinct customer segments that contributed disproportionately to overall revenue. The insights enabled targeted marketing campaigns, personalized customer experiences, and optimized product assortments, resulting in improved customer retention and increased sales performance. The analysis included RFM (Recency, Frequency, Monetary) modeling, clustering algorithms, and predictive analytics to identify behavioral patterns and future purchasing potential. I implemented interactive dashboards with drill-down capabilities to allow marketing teams to explore segment characteristics and track campaign performance. The solution also included a recommendation engine to suggest personalized promotions based on segment preferences and purchase history. Regular refresh cycles ensured that segmentation remained current with evolving customer behaviors and market trends.",
+          technologies: ["SQL", "R", "Python", "Tableau", "Power BI", "QuickSight", "Excel Array Functions", "K-means Clustering", "Hierarchical Clustering", "DBSCAN", "tidyverse", "dplyr", "ggplot2", "scikit-learn", "pandas", "PostgreSQL", "MySQL"],
+          roles: ["Customer Analysis", "Statistical Modeling", "Segment Identification", "Visualization Development", "Strategy Recommendations", "Database Query Optimization", "A/B Test Design", "Regression Analysis", "Cohort Analysis", "Customer Lifetime Value Calculation"],
+          impact: ["Identified high-value groups contributing 40% of total sales", "Improved targeted marketing effectiveness by 25%", "Increased customer retention rate by 15%", "Developed actionable segment-specific strategies", "Boosted email marketing conversion rates by 22%", "Reduced customer acquisition costs by 18%", "Enhanced cross-selling success rate by 30%", "Created automated monthly segment reporting", "Optimized inventory planning based on segment preferences"],
+          images: ["assets/img/portfolio/Retail_Segmentation_Analysis_3.jpg",
+                   "assets/img/portfolio/Retail_Segmentation_Analysis_2.jpg",
+                   "assets/img/portfolio/Retail_Segmentation_Analysis_1.jpg"]
+        },
+        "covid-analysis": {
+          title: "COVID-19 Disparities Analysis",
+          category: "Data Analysis",
+          date: "June 2024",
+          description: "Conducted an in-depth analysis of COVID-19 disparities across U.S. counties, emphasizing racial, ethnic, and age variations in case incidence and vaccination rates. Utilized SQL, Python, and R for data cleaning, processing, and advanced statistical analysis. Investigated demographic factors influencing health outcomes and created visualizations to reveal patterns in vaccination uptake. Delivered actionable insights into public health policy and disparities, contributing to targeted interventions for vulnerable populations.",
+          technologies: ["SQL", "Python", "R", "Tableau"],
+          roles: ["Data Cleaning", "Statistical Analysis", "Visualization", "Presentation"],
+          impact: ["Improved public health strategies", "Targeted interventions for vulnerable populations", "Created county-level risk assessment model", "Reduced response time for local health departments"],
+          images: [
+            "assets/img/portfolio/Covid_19_1.jpg",
+            "assets/img/portfolio/Covid_19_2.jpg",
+            "assets/img/portfolio/Covid_19_3.jpg"
+          ]
+        },
+        "churn-prediction": {
+          title: "Customer Churn Prediction",
+          category: "Machine Learning",
+          date: "May 2024",
+          description: "Developed a machine learning pipeline to predict customer churn for credit card accounts in a U.S. bank dataset. Conducted comprehensive exploratory data analysis (EDA) with diverse visualizations to uncover customer behavior trends. Built and optimized predictive models, including Logistic Regression, Random Forest, and Decision Tree, using hyperparameter tuning to improve performance. Delivered insights into key factors driving account closures, enabling strategies to reduce churn and retain customers.",
+          technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+          roles: ["EDA", "Model Development", "Hyperparameter Tuning", "Reporting"],
+          impact: ["Reduced churn rates by 15%", "Enhanced customer retention strategies", "Identified key at-risk customer segments", "Improved customer targeting accuracy by 22%"],
+          images: ["assets/img/portfolio/Customer_Churn.jpg",
+          "assets/img/portfolio/Customer_Churn_3.jpg",
+          "assets/img/portfolio/Customer_Churn_2.jpg"]
+        },
+        "auto-insurance": {
+          title: "Auto Insurance Analysis",
+          category: "Data Analysis",
+          date: "April 2024",
+          description: "Led an exploratory analysis of auto insurance claims, focusing on customer behavior, regional variations, and company profitability. Utilized statistical summaries to uncover trends and provide recommendations for improving pricing policies and enhancing profitability. Delivered insights that informed strategic decisions, driving customer satisfaction and boosting revenue for the organization.",
+          technologies: ["SQL", "Excel", "Tableau"],
+          roles: ["Data Analysis", "Statistical Modeling", "Visualization", "Business Recommendations"],
+          impact: ["Improved pricing policies", "Increased profitability by 10%", "Enhanced risk assessment accuracy", "Reduced fraudulent claims by 18%"],
+          images: ["assets/img/portfolio/Insurance_3.jpg",
+          "assets/img/portfolio/Insurance_2.jpg",
+          "assets/img/portfolio/Insurance.jpg"]
+        },
+        "ipl-analysis": {
+          title: "Sports Team Analysis",
+          category: "Data Visualization",
+          date: "March 2024",
+          description: "Conducted a detailed analysis of IPL team performance with an emphasis on home-field advantage, toss outcomes, and team dynamics. Utilized R Studio for data cleaning, manipulation, and visualization. Explored performance patterns and strategic insights to debunk myths, such as toss advantages, while providing actionable recommendations to optimize team performance and enhance competitiveness.",
+          technologies: ["R", "ggplot2", "RStudio"],
+          roles: ["Data Cleaning", "Visualization", "Statistical Analysis", "Reporting"],
+          impact: ["Provided actionable strategies for IPL teams", "Enhanced understanding of game dynamics", "Identified key performance indicators", "Created predictive model for match outcomes"],
+          images: ["assets/img/portfolio/cricket_1.jpg",
+          "assets/img/portfolio/cricket_3.jpg",
+          "assets/img/portfolio/cricket_2.jpg"]
+        },
+        "data-purging": {
+          title: "Automated Historical Data Purging",
+          category: "Automation & Data Management",
+          date: "February 2024",
+          description: "Designed and implemented an automated system for purging and archiving historical data in Salesforce, addressing critical storage limitations while maintaining data integrity and accessibility. The solution leveraged Talend for ETL processes and SOQL for efficient data retrieval, transferring older records to Salesforce Big Objects for long-term storage. This approach significantly reduced storage costs while ensuring compliance with data retention policies and maintaining analytical capabilities.",
+          technologies: ["Talend", "SOQL", "Salesforce", "Salesforce Big Objects", "SQL"],
+          roles: ["Automation Design", "ETL Development", "Process Optimization", "Data Model Creation", "Performance Testing"],
+          impact: ["Reduced storage costs by 25%", "Improved system performance by 30%", "Maintained 100% data accessibility for analytics", "Automated compliance with data retention policies"],
+          images: [
+            "assets/img/portfolio/Salesforce_purging_4.jpg",
+            "assets/img/portfolio/Salesforce_purging_3.jpg",
+            "assets/img/portfolio/Salesforce_purging_2.jpg"
+          ]
+        },
+        "batch-monitoring": {
+          title: "Automated Batch Monitoring",
+          category: "Automation & Data Management",
+          date: "January 2024",
+          description: "Created an automated batch monitoring system in Salesforce, leveraging SOQL and Apex to track scheduled batches at daily, weekly, and monthly intervals. Designed a comprehensive monitoring framework to detect errors, ensure timely job completion, and provide proactive insights into batch processing. Enhanced operational reliability and troubleshooting capabilities for the system, resulting in reduced downtime and improved performance.",
+          technologies: ["Apex", "SOQL", "Salesforce"],
+          roles: ["Framework Design", "Error Detection", "System Monitoring", "Alert System Implementation", "Documentation"],
+          impact: ["Reduced downtime by 30%", "Increased batch processing efficiency", "Improved error resolution time by 45%", "Enabled proactive system maintenance"],
+          images: ["assets/img/portfolio/Salesforce_batch_monitoring_1.jpg"]
+        },
+  "survey-dashboard": {
+          title: "Interactive Survey Dashboard",
+          category: "Data Visualization",
+          date: "March 2024",
+          description: "Developed an interactive Power BI dashboard to analyze salary and work-life balance trends from over 1,000 survey responses. Utilized dynamic visualizations and filters to highlight key patterns and insights, enabling decision-makers to identify workforce preferences and improve organizational strategies. Enhanced user experience with intuitive navigation and actionable metrics.",
+          technologies: ["Power BI", "DAX", "Excel", "Power Query"],
+          roles: ["Dashboard Development", "Data Visualization", "Trend Analysis", "Insight Generation", "Stakeholder Presentation"],
+          impact: ["Provided actionable insights for HR strategies", "Enhanced workforce satisfaction by 12%", "Reduced reporting time by 65%", "Improved data-driven decision making"],
+          images: ["assets/img/portfolio/Dashboard_2.jpg",
+          "assets/img/portfolio/Dashboard_1.jpg",
+          "assets/img/portfolio/Dashboard.jpg"]
+        }
+      };
+
+      // Get project key from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const projectKey = urlParams.get("project");
+      const project = projects[projectKey];
+
+      if (project) {
+        // Update page title and breadcrumb
+        document.title = `${project.title} | Mouli Chittabathina`;
+        document.getElementById("project-title").textContent = project.title;
+        document.getElementById("breadcrumb-project-title").textContent = project.title;
+        
+        // Update project information
+        document.getElementById("project-info").innerHTML = `
+          <li><i class="fas fa-tag"></i><strong>Category:</strong> ${project.category}</li>
+          <li><i class="fas fa-calendar-alt"></i><strong>Date:</strong> ${project.date}</li>
+        `;
+        
+        // Update project description
+        document.getElementById("project-description").textContent = project.description;
+        
+        // Update technologies with badges
+        const techContainer = document.getElementById("project-technologies-badges");
+        project.technologies.forEach(tech => {
+          const badge = document.createElement("span");
+          badge.className = "tech-badge";
+          badge.textContent = tech;
+          techContainer.appendChild(badge);
+        });
+        
+        // Update roles with icons
+        document.getElementById("project-roles").innerHTML = 
+          project.roles.map(role => 
+            `<li><i class="fas fa-check-circle"></i>${role}</li>`
+          ).join('');
+        
+        // Update impact with icons
+        document.getElementById("project-impact").innerHTML = 
+          project.impact.map(impact => 
+            `<li><i class="fas fa-chart-line"></i>${impact}</li>`
+          ).join('');
+
+        // Add project images to slider
+        const projectImagesContainer = document.getElementById("project-images");
+        project.images.forEach(image => {
+          const imgDiv = document.createElement("div");
+          imgDiv.classList.add("swiper-slide");
+          imgDiv.innerHTML = `<img src="${image}" alt="${project.title}" class="img-fluid">`;
+          projectImagesContainer.appendChild(imgDiv);
+        });
+
+        // Initialize Swiper with enhanced options
+        new Swiper('.portfolio-details-slider', {
+          loop: true,
+          spaceBetween: 10,
+          slidesPerView: 1,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+          },
+          effect: 'fade',
+          fadeEffect: {
+            crossFade: true
+          }
+        });
+        
+        // Add hover effects to tech badges
+        document.querySelectorAll('.tech-badge').forEach(badge => {
+          badge.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = '#3498db';
+            this.style.color = 'white';
+            this.style.transform = 'translateY(-2px)';
+          });
+          
+          badge.addEventListener('mouseleave', function() {
+            this.style.backgroundColor = 'rgba(52, 152, 219, 0.1)';
+            this.style.color = '#3498db';
+            this.style.transform = 'translateY(0)';
+          });
+        });
+      } else {
+        // Handle case when project is not found
+        document.getElementById("project-title").textContent = "Project Not Found";
+        document.getElementById("breadcrumb-project-title").textContent = "Not Found";
+        document.getElementById("project-description").textContent = "The requested project could not be found. Please return to the projects page and select a valid project.";
+        
+        // Hide project details sections
+        document.querySelectorAll('.section-heading').forEach(heading => {
+          heading.style.display = 'none';
+        });
+        
+        // Show error message
+        const errorDiv = document.createElement('div');
+        errorDiv.innerHTML = `
+          <div style="text-align: center; padding: 50px 20px;">
+            <i class="fas fa-exclamation-triangle" style="font-size: 60px; color: #e74c3c; margin-bottom: 20px;"></i>
+            <h2 style="color: #e74c3c; margin-bottom: 20px;">Project Not Found</h2>
+            <p style="font-size: 1.1rem; color: #555; margin-bottom: 30px;">The project you're looking for doesn't exist or has been moved.</p>
+            <a href="index.html#portfolio" class="back-to-projects text-decoration-none">
+              <i class="fas fa-arrow-left me-2"></i>Back to Projects
+            </a>
+          </div>
+        `;
+        document.querySelector('.project-card').appendChild(errorDiv);
+      }
+      
+      // Add event listeners for navigation back to projects
+      document.querySelector('a[href="index.html#portfolio"]').addEventListener('click', function() {
+        localStorage.setItem('scrollToPortfolio', 'true');
+      });
+    });
+  </script>
+</body>
+</html>
