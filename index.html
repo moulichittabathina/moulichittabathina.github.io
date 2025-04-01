@@ -1587,9 +1587,8 @@
 
   
 
-<!-- Contact Section -->
+<!-- Contact Form Section -->
 <section id="contact" class="contact section" style="background-color: #f8fbff; padding: 80px 0;">
-
   <!-- Section Title -->
   <div class="container section-title text-center" data-aos="fade-up">
     <h2 style="font-family: 'Montserrat', 'Roboto Slab', serif; font-weight: 700; font-size: clamp(1.75rem, 5vw, 2.5rem); color: #2c3e50; position: relative; display: inline-block; padding-bottom: 15px; margin: 0;">
@@ -1600,14 +1599,15 @@
       Looking for a data professional to help uncover insights from your data? I'm always open to new collaborations, 
       opportunities, and conversations. Let's connect!
     </p>
-  </div><!-- End Section Title -->
+  </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row gy-4 justify-content-center">
-
+      <!-- Contact Info Side -->
       <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
         <div class="info-wrap" style="background: white; border-radius: 15px; padding: 30px; height: 100%; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);">
           
+          <!-- Location Info -->
           <div class="info-item d-flex align-items-center mb-4" data-aos="zoom-in" data-aos-delay="100">
             <div style="width: 56px; height: 56px; background: rgba(52, 152, 219, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0;">
               <i class="bi bi-geo-alt" style="font-size: 28px; color: #3498db;"></i>
@@ -1616,8 +1616,9 @@
               <h3 style="font-size: 1.3rem; font-weight: 600; color: #2c3e50; margin-bottom: 5px;">My Location</h3>
               <p style="font-size: 1rem; color: #555; margin-bottom: 0;">11610 Fairfax Meadows Cir, Fairfax, VA, 22030</p>
             </div>
-          </div><!-- End Info Item -->
+          </div>
 
+          <!-- Phone Info -->
           <div class="info-item d-flex align-items-center mb-4" data-aos="zoom-in" data-aos-delay="200">
             <div style="width: 56px; height: 56px; background: rgba(52, 152, 219, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0;">
               <i class="bi bi-telephone" style="font-size: 28px; color: #3498db;"></i>
@@ -1626,8 +1627,9 @@
               <h3 style="font-size: 1.3rem; font-weight: 600; color: #2c3e50; margin-bottom: 5px;">Call Me</h3>
               <p style="font-size: 1rem; color: #555; margin-bottom: 0;">+1 571-564-6067</p>
             </div>
-          </div><!-- End Info Item -->
+          </div>
 
+          <!-- Email Info -->
           <div class="info-item d-flex align-items-center mb-4" data-aos="zoom-in" data-aos-delay="300">
             <div style="width: 56px; height: 56px; background: rgba(52, 152, 219, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0;">
               <i class="bi bi-envelope" style="font-size: 28px; color: #3498db;"></i>
@@ -1636,8 +1638,9 @@
               <h3 style="font-size: 1.3rem; font-weight: 600; color: #2c3e50; margin-bottom: 5px;">Email Me</h3>
               <p style="font-size: 1rem; color: #555; margin-bottom: 0;">moulichittabathina1999@gmail.com</p>
             </div>
-          </div><!-- End Info Item -->
+          </div>
 
+          <!-- LinkedIn Info -->
           <div class="info-item d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
             <div style="width: 56px; height: 56px; background: rgba(52, 152, 219, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0;">
               <i class="bi bi-linkedin" style="font-size: 28px; color: #3498db;"></i>
@@ -1648,7 +1651,7 @@
                 <a href="https://linkedin.com/in/moulich1999" target="_blank" style="color: #3498db; text-decoration: none;">linkedin.com/in/moulich1999</a>
               </p>
             </div>
-          </div><!-- End Info Item -->
+          </div>
 
           <!-- Map -->
           <div class="mt-4" data-aos="zoom-in" data-aos-delay="500">
@@ -1660,40 +1663,41 @@
         </div>
       </div>
 
+      <!-- Contact Form -->
       <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
-        <!-- Form -->
         <div style="background: white; border-radius: 15px; padding: 30px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);">
           <h3 style="font-size: 1.6rem; color: #2c3e50; font-weight: 700; margin-bottom: 25px; border-bottom: 2px solid #3498db; padding-bottom: 15px;">
             Send Me a Message
           </h3>
           
-          <form id="contact-form" class="php-email-form" data-aos="fade-up">
+          <!-- Updated Form with action and method -->
+          <form id="contact-form" class="php-email-form" data-aos="fade-up" action="#" method="POST" novalidate>
             <div class="row gy-4">
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="name-field" class="form-label" style="font-weight: 600; color: #2c3e50; margin-bottom: 8px;">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="" style="padding: 12px 15px; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease;">
+                  <input type="text" name="name" id="name-field" class="form-control" required style="padding: 12px 15px; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease;">
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="email-field" class="form-label" style="font-weight: 600; color: #2c3e50; margin-bottom: 8px;">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="" style="padding: 12px 15px; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease;">
+                  <input type="email" class="form-control" name="email" id="email-field" required style="padding: 12px 15px; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease;">
                 </div>
               </div>
 
               <div class="col-md-12">
                 <div class="form-group">
                   <label for="subject-field" class="form-label" style="font-weight: 600; color: #2c3e50; margin-bottom: 8px;">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="" style="padding: 12px 15px; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease;">
+                  <input type="text" class="form-control" name="subject" id="subject-field" required style="padding: 12px 15px; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease;">
                 </div>
               </div>
 
               <div class="col-md-12">
                 <div class="form-group">
                   <label for="message-field" class="form-label" style="font-weight: 600; color: #2c3e50; margin-bottom: 8px;">Message</label>
-                  <textarea class="form-control" name="message" rows="8" id="message-field" required="" style="padding: 12px 15px; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease;"></textarea>
+                  <textarea class="form-control" name="message" rows="8" id="message-field" required style="padding: 12px 15px; border-radius: 8px; border: 1px solid #ddd; transition: all 0.3s ease;"></textarea>
                 </div>
               </div>
 
@@ -1709,42 +1713,58 @@
             </div>
           </form>
         </div>
-      </div><!-- End Contact Form -->
+      </div>
     </div>
   </div>
-</section><!-- /Contact Section -->
+</section>
 
-<!-- Add EmailJS Script -->
+<!-- EmailJS Script -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
   // Initialize EmailJS
-  emailjs.init("8IxGeaOpRTxG71bW-");  // EmailJS user ID
+  (function(){
+    emailjs.init("8IxGeaOpRTxG71bW-");
+  })();
 
-  // Get form data and send email
-  document.getElementById("contact-form").addEventListener("submit", function(event) {
+  // Select the contact form
+  const form = document.getElementById('contact-form');
+  
+  // Loading and message elements
+  const loadingElement = form.querySelector('.loading');
+  const errorElement = form.querySelector('.error-message');
+  const successElement = form.querySelector('.sent-message');
+
+  // Form submission handler
+  form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Show loading indicator
-    this.querySelector('.loading').style.display = 'block';
-    
-    // Hide any previous messages
-    this.querySelector('.error-message').style.display = 'none';
-    this.querySelector('.sent-message').style.display = 'none';
+    // Reset previous messages
+    loadingElement.style.display = 'block';
+    errorElement.style.display = 'none';
+    successElement.style.display = 'none';
 
-    var form = event.target;
-
-    emailjs.sendForm("service_na9z1ab", "template_ylku5t7", form)
-      .then(function(response) {
-        console.log("Success", response);
-        form.querySelector(".loading").style.display = "none";
-        form.querySelector(".sent-message").style.display = "block";
+    // Send email using EmailJS
+    emailjs.sendForm(
+      "service_na9z1ab",    // Your Service ID
+      "template_ylku5t7",   // Your Template ID
+      this
+    )
+    .then(
+      function(response) {
+        console.log("Email sent successfully!", response);
+        loadingElement.style.display = 'none';
+        successElement.style.display = 'block';
         form.reset();
-      })
-      .catch(function(error) {
-        console.log("Failed", error);
-        form.querySelector(".loading").style.display = "none";
-        form.querySelector(".error-message").style.display = "block";
-      });
+      },
+      function(error) {
+        console.error("Email send failed:", error);
+        loadingElement.style.display = 'none';
+        errorElement.style.display = 'block';
+      }
+    );
   });
+});
 </script>
 
 </main>
