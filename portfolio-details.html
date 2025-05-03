@@ -510,6 +510,63 @@
       
       // Project data - Enhanced with more details from resume
       const projects = {
+        "smart-city": {
+      title: "Smart City Data Pipeline",
+      category: "Data Engineering",
+      date: "April 2025",
+      description: "Engineered a comprehensive end-to-end real-time data processing pipeline for smart city applications. The system ingests and processes millions of daily events from diverse sources including vehicles, cameras, GPS trackers, weather stations, and emergency services. The architecture leverages Apache Kafka for fault-tolerant data streaming, Apache Spark for distributed stream processing, and AWS services for storage, cataloging, and analytics. The solution delivers actionable insights for traffic pattern analysis, environmental monitoring, and public safety alerts while maintaining high performance and scalability for future growth.",
+      technologies: ["Apache Kafka", "Apache Spark", "AWS Glue", "Amazon Athena", "Amazon Redshift", "Docker", "Python", "S3", "IAM", "PowerBI", "ETL", "Stream Processing", "IoT Data Processing", "Real-time Analytics", "Cloud Data Warehousing"],
+      roles: ["Data Architecture Design", "Stream Processing Implementation", "ETL Workflow Development", "Data Warehouse Optimization", "Visualization Creation", "Cloud Integration", "Container Deployment", "Data Quality Monitoring", "Scalability Planning"],
+      impact: ["Processed millions of daily events from diverse city data sources", "Reduced data latency from minutes to seconds for critical insights", "Improved query performance by 50% through optimized data lake architecture", "Reduced annual storage costs by approximately $75K", "Created comprehensive dashboards for city administrators", "Implemented proper security controls and governance policies", "Enabled horizontal scaling through containerization", "Established robust data quality monitoring throughout the pipeline"],
+      images: [
+        "assets/img/portfolio/Smart_City_Pipeline_1.jpg",
+        "assets/img/portfolio/Smart_City_Pipeline_2.jpg",
+        "assets/img/portfolio/Smart_City_Pipeline_3.jpg"
+      ]
+    },
+    "call-centre": {
+      title: "Call Centre Analytics Dashboard",
+      category: "Data Visualization",
+      date: "April 2025",
+      description: "Designed and implemented a fully interactive Excel dashboard for call center performance analytics. The solution uses advanced Excel features including pivot tables, complex formulas, and conditional formatting to visualize key call center metrics. The dashboard includes customizable filters for time period, agent, department, and call type analysis, along with automated KPI tracking for critical metrics such as handle time, resolution rate, abandonment rate, and customer satisfaction. Additional features include trend analysis, agent performance scorecards, and visual elements like heat maps and sparklines to maximize data comprehension.",
+      technologies: ["Microsoft Excel", "Advanced Excel Formulas", "Excel VBA", "Pivot Tables", "Conditional Formatting", "Data Visualization", "Dashboard Design", "KPI Tracking"],
+      roles: ["Dashboard Development", "KPI Automation", "Filter Implementation", "Trend Analysis Creation", "Performance Scorecard Design", "Data Validation Implementation", "Macro Development", "Documentation Creation"],
+      impact: ["Created fully interactive dashboard for call center metrics visualization", "Enabled multi-dimensional analysis through customizable filters", "Automated tracking of critical KPIs including handle time and resolution rate", "Implemented trend analysis for identifying patterns in call volumes and times", "Created comparative analysis against team benchmarks", "Enhanced reliability through data validation and error-handling", "Streamlined data refresh processes through custom VBA macros", "Improved data comprehension through diverse visualization techniques", "Facilitated organization-wide adoption through comprehensive documentation"],
+      images: [
+        "assets/img/portfolio/Call_Centre_Dashboard_1.jpg",
+        "assets/img/portfolio/Call_Centre_Dashboard_2.jpg",
+        "assets/img/portfolio/Call_Centre_Dashboard_3.jpg"
+      ]
+    },
+    "ultra-marathon": {
+      title: "Ultra Marathon Performance Analysis",
+      category: "Data Analysis",
+      date: "March 2025",
+      description: "Conducted a comprehensive analysis of runner performance metrics from the Forgotten Florida 50 Ultra Marathon. The project involved cleaning and analyzing complex timing data for over 200 participants, including handling inconsistencies, DNF runners, and missing split times. Using Python, SQL, and Looker Studio, I engineered queries to extract performance patterns related to pace degradation, elevation impact, and aid station dwell times. The analysis culminated in interactive visualizations and a predictive model for optimal pacing strategies based on environmental conditions and runner experience, creating a foundation for future ultra-marathon event analysis.",
+      technologies: ["SQL", "Python", "Looker Studio", "Advanced Excel", "Data Cleaning", "Statistical Analysis", "Data Transformation", "Predictive Modeling", "Data Visualization", "Time Series Analysis"],
+      roles: ["Data Cleaning", "Performance Analysis", "SQL Query Engineering", "Dashboard Development", "Statistical Modeling", "Predictive Model Creation", "Cross-Event Analysis Foundation"],
+      impact: ["Processed and analyzed timing data for 200+ ultra marathon participants", "Created robust data cleaning protocols for inconsistent timing data", "Extracted performance patterns including pace degradation and elevation impact", "Developed interactive visualization dashboards for key performance metrics", "Applied statistical methods to identify predictive factors for race completion", "Created predictive model for optimal pacing based on multiple variables", "Established data foundation for future 100-mile event comparisons"],
+      images: [
+        "assets/img/portfolio/Ultra_Marathon_1.jpg",
+        "assets/img/portfolio/Ultra_Marathon_2.jpg",
+        "assets/img/portfolio/Ultra_Marathon_3.jpg"
+      ]
+    },
+    "weather-etl": {
+      title: "Weather API ETL Pipeline",
+      category: "Data Engineering",
+      date: "March 2025",
+      description: "Developed a fully automated ETL pipeline using Apache Airflow to extract, transform, and load real-time weather data from the OpenWeatherMap API to Amazon S3. The solution implements a robust data engineering workflow with core tasks including API availability verification via HttpSensor, data extraction through HttpOperator, and transformation/loading with PythonOperator. The pipeline captures comprehensive weather metrics and transforms raw API responses into structured datasets with proper formatting and conversions. Features include automated daily collection, configurable retry logic, failure notifications, and a scalable S3 storage solution with timestamped organization for efficient historical analysis.",
+      technologies: ["Apache Airflow", "Python", "ETL Pipeline Design", "Amazon S3", "API Integration", "Data Transformation", "Cloud Storage", "Pandas", "Infrastructure as Code", "DAG Configuration"],
+      roles: ["Pipeline Architecture", "Workflow Task Implementation", "Data Transformation Logic", "Storage Structure Design", "Error Handling Implementation", "Notification System Creation", "Parameterized Scheduling Configuration", "Code Structure Organization"],
+      impact: ["Automated extraction and processing of real-time weather data", "Implemented robust workflow with verification, extraction and transformation tasks", "Structured raw API data into organized datasets with proper conversions", "Captured comprehensive metrics including temperature, pressure, and wind data", "Enabled reliable data collection with advanced error handling and retry logic", "Created scalable storage solution with efficient historical data organization", "Implemented infrastructure-as-code principles for reproducible deployments", "Configured flexible scheduling to meet business requirements", "Enhanced solution with email notification for pipeline failures"],
+      images: [
+        "assets/img/portfolio/ETL_Weather_API_3.jpg",
+        "assets/img/portfolio/ETL_Weather_API_1.jpg",
+        "assets/img/portfolio/ETL_Weather_API_2.jpg"
+        
+      ]
+    },
         "fraud-detection": {
           title: "Fraud Detection Enhancement",
           category: "Machine Learning",
